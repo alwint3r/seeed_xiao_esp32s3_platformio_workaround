@@ -7,5 +7,5 @@ if [ ! -d downloads ]; then
     mkdir downloads
 fi
 
-curl --output downloads/$filename 
+curl --output downloads/$filename $url
 pushd downloads && unzip $filename && popd
